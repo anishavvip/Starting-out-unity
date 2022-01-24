@@ -43,7 +43,9 @@ void Weight(Rigidbody2D endRB)
         weight.connectedAnchor = new Vector2(0, -distanceFromChainEnd);
     }
 ```
-![br](https://user-images.githubusercontent.com/85858695/150809002-aa0fb2f7-81b4-4adc-a555-fbab274f93cf.png)
+![br](https://user-images.githubusercontent.com/85858695/150830170-ff952e0c-23ed-4b9b-8da5-77c48049af65.png)
+
+
 
 ## Color switch
 https://user-images.githubusercontent.com/85858695/148812220-7472ba4f-8f86-49cf-a9ac-42aba03004c6.mp4
@@ -92,7 +94,7 @@ private void OnTriggerStay2D(Collider2D collision)
         }
     }
 ```
-![br](https://user-images.githubusercontent.com/85858695/150809002-aa0fb2f7-81b4-4adc-a555-fbab274f93cf.png)
+![br](https://user-images.githubusercontent.com/85858695/150830170-ff952e0c-23ed-4b9b-8da5-77c48049af65.png)
 ## AA
 https://user-images.githubusercontent.com/85858695/148813946-16b4a867-d58a-4c1f-99d6-59d391d68ec1.mp4
 
@@ -133,7 +135,7 @@ void UpdatePop()
         ballSpawner.position -= new Vector3(0, pos, 0);
     }
 ```
-![br](https://user-images.githubusercontent.com/85858695/150809002-aa0fb2f7-81b4-4adc-a555-fbab274f93cf.png)
+![br](https://user-images.githubusercontent.com/85858695/150830170-ff952e0c-23ed-4b9b-8da5-77c48049af65.png)
 ## Basic shooting
 https://user-images.githubusercontent.com/85858695/148815664-250a4673-4b09-4bb5-8280-3095160255f8.mp4
 
@@ -248,7 +250,7 @@ void Chase()
         }
     }
 ```
-![br](https://user-images.githubusercontent.com/85858695/150809002-aa0fb2f7-81b4-4adc-a555-fbab274f93cf.png)
+![br](https://user-images.githubusercontent.com/85858695/150830170-ff952e0c-23ed-4b9b-8da5-77c48049af65.png)
 ## Escalator
 https://user-images.githubusercontent.com/85858695/148816077-438462aa-91c3-4f7d-818c-3576d252bfc1.mp4
 
@@ -291,7 +293,7 @@ void PlayerEnteredTheMathWall()
     }
 ```
 
-![br](https://user-images.githubusercontent.com/85858695/150809002-aa0fb2f7-81b4-4adc-a555-fbab274f93cf.png)
+![br](https://user-images.githubusercontent.com/85858695/150830170-ff952e0c-23ed-4b9b-8da5-77c48049af65.png)
 ## Endless runner
 https://user-images.githubusercontent.com/85858695/148812892-f007dc7f-b69d-45eb-9f67-6d358986f182.mp4
 
@@ -377,5 +379,4 @@ private void OnTriggerEnter(Collider other)
 
     }
 ```
-
-![br](https://user-images.githubusercontent.com/85858695/150809002-aa0fb2f7-81b4-4adc-a555-fbab274f93cf.png)
+![br](https://user-images.githubusercontent.com/85858695/150830170-ff952e0c-23ed-4b9b-8da5-77c48049af65.png)
