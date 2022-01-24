@@ -64,6 +64,48 @@ https://user-images.githubusercontent.com/85858695/148812220-7472ba4f-8f86-49cf-
 
 
 
+
+### Code Snippets
+
+#### Collisions
+##### Collision with white coin
+  - Camera reaches that location
+  - The coin becomes invisible
+  
+##### Collision with color switcher
+  - A random material is generated from the list provided
+  - The material only gets assigned if it's not the same as the current material
+  
+##### Collision with different color
+  - If name of material is different from the current material
+  - If our list contains it as a registered material
+   
+```C#
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        string mat = gameObject.GetComponent<SpriteRenderer>().material.name;
+
+        if (collision.tag == "WhiteCoin")
+        {
+            collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            camPos = collision.gameObject.transform.position;
+        }
+
+        if (collision.tag == "ColorSwitcher")
+        {
+            Material newmat = material[Random.Range(0, 4)];
+            if (newmat.name != mat.Split(' ')[0])
+            {
+                spriteRenderer.material = newmat;
+            }
+        }
+
+        if (collision.gameObject.tag != mat.Split(' ')[0] && mat1.Contains(collision.gameObject.tag))
+        {
+            Destroy(gameObject);
+        }
+    }
+```
 ## AA
 https://user-images.githubusercontent.com/85858695/148813946-16b4a867-d58a-4c1f-99d6-59d391d68ec1.mp4
 
