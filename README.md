@@ -4,7 +4,7 @@ https://user-images.githubusercontent.com/85858695/148811530-550be6e6-3d0a-46e2-
 
 
 
-### Code Snippets
+**Code Snippets**
 
 
 **Form the rope**
@@ -51,7 +51,7 @@ https://user-images.githubusercontent.com/85858695/148812220-7472ba4f-8f86-49cf-
 
 
 
-### Code Snippets
+**Code Snippets**
 
 **Collisions**
 **Collision with white coin**
@@ -98,7 +98,7 @@ https://user-images.githubusercontent.com/85858695/148813946-16b4a867-d58a-4c1f-
 
 
 
-### Code Snippets
+**Code Snippets**
 
 **Push**
 
@@ -139,7 +139,7 @@ https://user-images.githubusercontent.com/85858695/148815664-250a4673-4b09-4bb5-
 
 
 
-### Code Snippets
+**Code Snippets**
 
 **Switch case**
 
@@ -254,7 +254,7 @@ https://user-images.githubusercontent.com/85858695/148816077-438462aa-91c3-4f7d-
 
 
 
-### Code Snippets
+**Code Snippets**
 
 **Pooling players**
 
@@ -298,7 +298,7 @@ https://user-images.githubusercontent.com/85858695/148812892-f007dc7f-b69d-45eb-
 
 
 
-### Code Snippets
+**Code Snippets**
 
 **Move in lanes**
 
