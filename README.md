@@ -1,22 +1,4 @@
 # Starting-out-unity
-
-## Frogger 
-https://user-images.githubusercontent.com/85858695/148811516-f6eed2f8-1ee5-4a16-a3f5-4a71efba7ef9.mp4
-
-
-
-
-
-
-### Code Snippets
-
-#### Move down in arcade style
-
-```C#
-transform.Translate(0, -intensity * speed, 0);
-```
-
-# 
 ## Cut the rope
 https://user-images.githubusercontent.com/85858695/148811530-550be6e6-3d0a-46e2-aa89-07048c8b820c.mp4
 
@@ -317,10 +299,82 @@ https://user-images.githubusercontent.com/85858695/148812892-f007dc7f-b69d-45eb-
 
 ### Code Snippets
 
-#### Move down in arcade style
+#### Move in lanes
 
 ```C#
-transform.Translate(0, -intensity * speed, 0);
+//MOVE IN THE LANES
+void MoverX(int wallNo, int direction)
+    {
+        for (int i = 1; i < 5; i++)
+        {
+            if (wallNo != i)
+            {
+                walls[i].isTrigger = false;
+            }
+            else
+            {
+                walls[i].isTrigger = true;
+            }
+        }
+
+        move.x = direction * speed;
+    }
+```
+#### Calling function MoverX
+
+```C#
+void Update()
+    {
+        move.z = Time.deltaTime * speed;
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            if (wallNo <= 1)
+            {
+                wallNo = 1;
+                MoverX(wallNo, -1);
+            }
+            else
+            {
+                MoverX(wallNo, -1);
+                wallNo--;
+            }
+           
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            if (wallNo >= 4)
+            {
+                wallNo = 4;
+                MoverX(wallNo, 1);
+            }
+            else
+            {
+                MoverX(wallNo, 1);
+                wallNo++;
+            }
+           
+        }
+
+        Jumping(Input.GetKeyDown(KeyCode.Space));
+
+        Sliding(Input.GetKeyDown(KeyCode.S));
+
+        player.Move(move);
+    }
+```
+#### Making it endless
+```C#
+private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            Instantiate(Base, baseSpawner.position, baseSpawner.rotation);
+            Destroy(GameObject.FindGameObjectWithTag("BASE"), 2f);
+        }
+
+    }
 ```
 
 # 
