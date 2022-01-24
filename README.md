@@ -10,7 +10,7 @@ https://user-images.githubusercontent.com/85858695/148811516-f6eed2f8-1ee5-4a16-
 
 ### Code Snippets
 
-Move down in arcade style
+#### Move down in arcade style
 
 ```C#
 transform.Translate(0, -intensity * speed, 0);
