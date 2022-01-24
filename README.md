@@ -273,10 +273,39 @@ https://user-images.githubusercontent.com/85858695/148816077-438462aa-91c3-4f7d-
 
 ### Code Snippets
 
-#### Move down in arcade style
+#### Pooling players
 
 ```C#
-transform.Translate(0, -intensity * speed, 0);
+void PlayerEnteredTheMathWall()
+    {
+        string str = gameObject.ToString();
+        float val = float.Parse(str.Substring(0, 1));
+        int poolStart = ObjectPooler.SharedInstance.lastVal;
+        for (int i = poolStart; i < (int)(val + poolStart); i++)
+        {
+            if (!ObjectPooler.SharedInstance.pooledObjects[i].activeInHierarchy)
+            {
+                GameObject man = ObjectPooler.SharedInstance.pooledObjects[i];
+                if (man != null)
+                {
+                    //Not to make it move in a straight line
+                    if (i % 2 == 0)
+                    {
+                        man.transform.position = new Vector3(-xPos, yPos, zPos);
+                        man.GetComponent<PlayerLogic>().MovePlayer();
+                    }
+                    else
+                    {
+                        man.transform.position = new Vector3(xPos, yPos, zPos);
+                        man.GetComponent<PlayerLogic>().MovePlayer();
+                    }
+                }
+                man.SetActive(true);
+            }
+            k++;
+        }
+        ObjectPooler.SharedInstance.lastVal = poolStart + (int)val;
+    }
 ```
 
 # 
