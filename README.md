@@ -7,7 +7,7 @@ https://user-images.githubusercontent.com/85858695/148811530-550be6e6-3d0a-46e2-
 ### Code Snippets
 
 
-#### Form the rope 
+**Form the rope**
 - Keep connecting the mini-links to their previous link
 - Except for the last one which should be connected to the candy (weight).
 ```C#
@@ -30,7 +30,7 @@ void Rope()
         }
     }
 ```
-#### Candy (weight) 
+**Candy (weight)**
 - Check the details required in the inspector for the hinge joint and add data accordingly through the script 
 - Call this function while connecting the last link to the candy
 ```C#
@@ -53,16 +53,16 @@ https://user-images.githubusercontent.com/85858695/148812220-7472ba4f-8f86-49cf-
 
 ### Code Snippets
 
-#### Collisions
-##### Collision with white coin
+**Collisions**
+**Collision with white coin**
   - Camera reaches that location
   - The coin becomes invisible
   
-##### Collision with color switcher
+**Collision with color switcher**
   - A random material is generated from the list provided
   - The material only gets assigned if it's not the same as the current material
   
-##### Collision with different color
+**Collision with different color**
   - If name of material is different from the current material
   - If our list contains it as a registered material
    
@@ -100,7 +100,7 @@ https://user-images.githubusercontent.com/85858695/148813946-16b4a867-d58a-4c1f-
 
 ### Code Snippets
 
-#### Push
+**Push**
 
 ```C#
 void Push(int size)
@@ -114,7 +114,7 @@ void Push(int size)
         }
     }
 ```
-#### Pop
+**Pop**
 
 ```C#
 void Pop()
@@ -141,7 +141,7 @@ https://user-images.githubusercontent.com/85858695/148815664-250a4673-4b09-4bb5-
 
 ### Code Snippets
 
-#### Switch case
+**Switch case**
 
 ```C#
 void Update()
@@ -172,7 +172,7 @@ void Update()
     }
 
 ```
-#### Search for the player
+**Search for the player**
 
 ```C#
 void SearchForPlayer()
@@ -184,7 +184,7 @@ void SearchForPlayer()
         }
     }
 ```
-#### Patrol
+**Patrol**
 
 ```C#
 void Patrol()
@@ -204,7 +204,7 @@ void Patrol()
         }
     }
 ```
-#### Chase
+**Chase**
 
 ```C#
 void Chase()
@@ -223,7 +223,7 @@ void Chase()
         }
     }
 ```
-#### Attack
+**Attack**
 
 ```C#
  void Attack()
@@ -256,7 +256,7 @@ https://user-images.githubusercontent.com/85858695/148816077-438462aa-91c3-4f7d-
 
 ### Code Snippets
 
-#### Pooling players
+**Pooling players**
 
 ```C#
 void PlayerEnteredTheMathWall()
@@ -300,7 +300,7 @@ https://user-images.githubusercontent.com/85858695/148812892-f007dc7f-b69d-45eb-
 
 ### Code Snippets
 
-#### Move in lanes
+**Move in lanes**
 
 ```C#
 //MOVE IN THE LANES
@@ -321,7 +321,7 @@ void MoverX(int wallNo, int direction)
         move.x = direction * speed;
     }
 ```
-#### Calling function MoverX
+**Calling function MoverX**
 
 ```C#
 void Update()
@@ -365,7 +365,7 @@ void Update()
         player.Move(move);
     }
 ```
-#### Making it endless
+**Making it endless**
 ```C#
 private void OnTriggerEnter(Collider other)
     {
