@@ -56,6 +56,7 @@ https://user-images.githubusercontent.com/85858695/148812220-7472ba4f-8f86-49cf-
 **Code Snippets**
 
 **Collisions**
+
 **Collision with white coin**
   - Camera reaches that location
   - The coin becomes invisible
