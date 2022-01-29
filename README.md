@@ -1,8 +1,9 @@
-# Starting-out-unity
-## Cut the rope
-https://user-images.githubusercontent.com/85858695/148811530-550be6e6-3d0a-46e2-aa89-07048c8b820c.mp4
 
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/85858695/151645394-6fc12fd5-def0-4bd5-9a26-7b5b36948960.png" alt="Prototypes"/>
+  <img src="https://user-images.githubusercontent.com/85858695/151645105-65112d72-5876-4b37-941f-6dbf9bcfe1b6.png" alt="Cut The Rope"/>
+  <img src="https://user-images.githubusercontent.com/85858695/151645416-0c159b75-cf14-488e-b17a-1c3bfff64b2f.gif" alt="Cut The Rope"/>
+</p>
 
 **Code Snippets**
 
@@ -45,11 +46,10 @@ void Weight(Rigidbody2D endRB)
 ```
 ![br](https://user-images.githubusercontent.com/85858695/150830170-ff952e0c-23ed-4b9b-8da5-77c48049af65.png)
 
-
-
-## Color switch
-https://user-images.githubusercontent.com/85858695/148812220-7472ba4f-8f86-49cf-a9ac-42aba03004c6.mp4
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/85858695/151644524-acefbc9a-90fe-4d78-a091-95e6d82dba44.png" alt="Color Switch"/>
+  <img src="https://user-images.githubusercontent.com/85858695/151644250-518c9726-d6dc-4ca4-bacc-f6e4b84f7b1b.gif" alt="Color Switch"/>
+</p>
 
 
 
@@ -96,10 +96,10 @@ private void OnTriggerStay2D(Collider2D collision)
     }
 ```
 ![br](https://user-images.githubusercontent.com/85858695/150830170-ff952e0c-23ed-4b9b-8da5-77c48049af65.png)
-## AA
-https://user-images.githubusercontent.com/85858695/148813946-16b4a867-d58a-4c1f-99d6-59d391d68ec1.mp4
-
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/85858695/151645173-e34e9eff-681c-4f52-9093-7216f38ab065.png" alt="aa"/>
+  <img src="https://user-images.githubusercontent.com/85858695/151645256-a16b9d4c-8db4-4f95-9660-6110743c782a.gif" alt="aa"/>
+</p>
 
 **Code Snippets**
 
@@ -137,10 +137,11 @@ void UpdatePop()
     }
 ```
 ![br](https://user-images.githubusercontent.com/85858695/150830170-ff952e0c-23ed-4b9b-8da5-77c48049af65.png)
-## Basic shooting
-https://user-images.githubusercontent.com/85858695/148815664-250a4673-4b09-4bb5-8280-3095160255f8.mp4
 
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/85858695/151644906-61c8ec3c-3bd4-41d4-ad48-7088137857a2.png" alt="Basic Shooting"/>
+  <img src="https://user-images.githubusercontent.com/85858695/151645193-e08cf684-a373-45a7-92cb-bf6b03a2ecc1.gif" alt="Basic Shooting"/>
+</p>
 
 **Code Snippets**
 
@@ -252,9 +253,11 @@ void Chase()
     }
 ```
 ![br](https://user-images.githubusercontent.com/85858695/150830170-ff952e0c-23ed-4b9b-8da5-77c48049af65.png)
-## Escalator
-https://user-images.githubusercontent.com/85858695/148816077-438462aa-91c3-4f7d-818c-3576d252bfc1.mp4
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/85858695/151644728-f2ae40ad-5be6-434a-9dc0-cdea87b483be.png" alt="Escalator"/>
+  <img src="https://user-images.githubusercontent.com/85858695/151644792-0d0a8b6f-b7e4-45dd-bf0c-64a4f0c6134c.gif" alt="Escalator"/>
+</p>
 
 
 **Code Snippets**
@@ -295,8 +298,14 @@ void PlayerEnteredTheMathWall()
 ```
 
 ![br](https://user-images.githubusercontent.com/85858695/150830170-ff952e0c-23ed-4b9b-8da5-77c48049af65.png)
-## Endless runner
-https://user-images.githubusercontent.com/85858695/148812892-f007dc7f-b69d-45eb-9f67-6d358986f182.mp4
+
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/85858695/151644561-c3d0726f-0276-4425-8b8f-6b9f93d76372.png" alt="Endless Runner"/>
+  <img src="https://user-images.githubusercontent.com/85858695/151644595-052f1b49-fe7a-4bde-89e0-3d2cdc438d0f.gif" alt="Endless Runner"/>
+</p>
+
+
 
 
 
