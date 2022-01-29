@@ -140,7 +140,7 @@ void UpdatePop()
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85858695/151644906-61c8ec3c-3bd4-41d4-ad48-7088137857a2.png" alt="Basic Shooting"/>
-  <img src="https://user-images.githubusercontent.com/85858695/151645193-e08cf684-a373-45a7-92cb-bf6b03a2ecc1.gif" alt="Basic Shooting"/>
+  <img src="https://user-images.githubusercontent.com/85858695/151646387-e133e121-4310-4544-b9de-8a5f6f4ae101.gif" alt="Basic Shooting"/>
 </p>
 
 **Code Snippets**
