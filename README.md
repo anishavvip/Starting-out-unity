@@ -4,8 +4,7 @@
   <img src="https://user-images.githubusercontent.com/85858695/151645416-0c159b75-cf14-488e-b17a-1c3bfff64b2f.gif" alt="Cut The Rope"/>
 </p>
 
-# Code Snippets - Cut The Rope
-
+# &emsp;   &emsp;   &emsp;   &emsp;   &emsp;   &emsp;   &ensp;  Code Snippets - Cut The Rope
 
 **Form the rope**
 - Keep connecting the mini-links to their previous link
@@ -52,7 +51,7 @@ void Weight(Rigidbody2D endRB)
 
 
 
-# Code Snippets - Color Switch
+# &emsp;   &emsp;   &emsp;   &emsp;   &emsp;   &emsp;   &ensp;  Code Snippets - Color Switch
 
 **Collisions**
 
@@ -102,7 +101,7 @@ private void OnTriggerStay2D(Collider2D collision)
 </p>
 
 
-# Code Snippets - aa
+# &emsp;   &emsp;   &emsp;   &emsp;   &emsp;   &emsp;   &emsp;  &emsp;  &ensp;  Code Snippets - aa
 
 **Push**
 
@@ -145,7 +144,7 @@ void UpdatePop()
 </p>
 
 
-# Code Snippets - Basic Shooting
+# &emsp;   &emsp;   &emsp;   &emsp;   &emsp;   &ensp;   &ensp;  Code Snippets - Basic Shooting
 
 **Switch case**
 
@@ -261,7 +260,7 @@ void Chase()
   <img src="https://user-images.githubusercontent.com/85858695/151644792-0d0a8b6f-b7e4-45dd-bf0c-64a4f0c6134c.gif" alt="Escalator"/>
 </p>
 
-# Code Snippets - Escalator
+# &emsp;   &emsp;   &emsp;   &emsp;   &emsp;   &emsp;   &emsp;  &ensp;  Code Snippets - Escalator
 
 **Pooling players**
 
@@ -306,7 +305,7 @@ void PlayerEnteredTheMathWall()
   <img src="https://user-images.githubusercontent.com/85858695/151644595-052f1b49-fe7a-4bde-89e0-3d2cdc438d0f.gif" alt="Endless Runner"/>
 </p>
 
-# Code Snippets - Endless Runner
+# &emsp;   &emsp;   &emsp;   &emsp;   &emsp;   &emsp;   &ensp;  Code Snippets - Endless Runner
 
 **Move in lanes**
 
