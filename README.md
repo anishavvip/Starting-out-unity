@@ -42,6 +42,91 @@ void Weight(Rigidbody2D endRB)
         weight.connectedAnchor = new Vector2(0, -distanceFromChainEnd);
     }
 ```
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/85858695/151644561-c3d0726f-0276-4425-8b8f-6b9f93d76372.png" alt="Endless Runner"/>
+  <img src="https://user-images.githubusercontent.com/85858695/151644595-052f1b49-fe7a-4bde-89e0-3d2cdc438d0f.gif" alt="Endless Runner"/>
+</p>
+
+# Code Snippets - Endless Runner
+
+**Move in lanes**
+
+```C#
+//MOVE IN THE LANES
+void MoverX(int wallNo, int direction)
+    {
+        for (int i = 1; i < 5; i++)
+        {
+            if (wallNo != i)
+            {
+                walls[i].isTrigger = false;
+            }
+            else
+            {
+                walls[i].isTrigger = true;
+            }
+        }
+
+        move.x = direction * speed;
+    }
+```
+**Calling function MoverX**
+
+```C#
+void Update()
+    {
+        move.z = Time.deltaTime * speed;
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            if (wallNo <= 1)
+            {
+                wallNo = 1;
+                MoverX(wallNo, -1);
+            }
+            else
+            {
+                MoverX(wallNo, -1);
+                wallNo--;
+            }
+           
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            if (wallNo >= 4)
+            {
+                wallNo = 4;
+                MoverX(wallNo, 1);
+            }
+            else
+            {
+                MoverX(wallNo, 1);
+                wallNo++;
+            }
+           
+        }
+
+        Jumping(Input.GetKeyDown(KeyCode.Space));
+
+        Sliding(Input.GetKeyDown(KeyCode.S));
+
+        player.Move(move);
+    }
+```
+**Making it endless**
+```C#
+private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            Instantiate(Base, baseSpawner.position, baseSpawner.rotation);
+            Destroy(GameObject.FindGameObjectWithTag("BASE"), 2f);
+        }
+
+    }
+```
+
 ![br](https://user-images.githubusercontent.com/85858695/150830170-ff952e0c-23ed-4b9b-8da5-77c48049af65.png)
 
 <p align="center">
@@ -95,6 +180,50 @@ private void OnTriggerStay2D(Collider2D collision)
 ```
 
 ![br](https://user-images.githubusercontent.com/85858695/150830170-ff952e0c-23ed-4b9b-8da5-77c48049af65.png)
+
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/85858695/151644728-f2ae40ad-5be6-434a-9dc0-cdea87b483be.png" alt="Escalator"/>
+  <img src="https://user-images.githubusercontent.com/85858695/151644792-0d0a8b6f-b7e4-45dd-bf0c-64a4f0c6134c.gif" alt="Escalator"/>
+</p>
+
+# Code Snippets - Escalator
+
+**Pooling players**
+
+```C#
+void PlayerEnteredTheMathWall()
+    {
+        string str = gameObject.ToString();
+        float val = float.Parse(str.Substring(0, 1));
+        int poolStart = ObjectPooler.SharedInstance.lastVal;
+        for (int i = poolStart; i < (int)(val + poolStart); i++)
+        {
+            if (!ObjectPooler.SharedInstance.pooledObjects[i].activeInHierarchy)
+            {
+                GameObject man = ObjectPooler.SharedInstance.pooledObjects[i];
+                if (man != null)
+                {
+                    //Not to make it move in a straight line
+                    if (i % 2 == 0)
+                    {
+                        man.transform.position = new Vector3(-xPos, yPos, zPos);
+                        man.GetComponent<PlayerLogic>().MovePlayer();
+                    }
+                    else
+                    {
+                        man.transform.position = new Vector3(xPos, yPos, zPos);
+                        man.GetComponent<PlayerLogic>().MovePlayer();
+                    }
+                }
+                man.SetActive(true);
+            }
+            k++;
+        }
+        ObjectPooler.SharedInstance.lastVal = poolStart + (int)val;
+    }
+```
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85858695/151645173-e34e9eff-681c-4f52-9093-7216f38ab065.png" alt="aa"/>
   <img src="https://user-images.githubusercontent.com/85858695/151645256-a16b9d4c-8db4-4f95-9660-6110743c782a.gif" alt="aa"/>
@@ -255,133 +384,3 @@ void Chase()
 ```
 ![br](https://user-images.githubusercontent.com/85858695/150830170-ff952e0c-23ed-4b9b-8da5-77c48049af65.png)
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/85858695/151644728-f2ae40ad-5be6-434a-9dc0-cdea87b483be.png" alt="Escalator"/>
-  <img src="https://user-images.githubusercontent.com/85858695/151644792-0d0a8b6f-b7e4-45dd-bf0c-64a4f0c6134c.gif" alt="Escalator"/>
-</p>
-
-# Code Snippets - Escalator
-
-**Pooling players**
-
-```C#
-void PlayerEnteredTheMathWall()
-    {
-        string str = gameObject.ToString();
-        float val = float.Parse(str.Substring(0, 1));
-        int poolStart = ObjectPooler.SharedInstance.lastVal;
-        for (int i = poolStart; i < (int)(val + poolStart); i++)
-        {
-            if (!ObjectPooler.SharedInstance.pooledObjects[i].activeInHierarchy)
-            {
-                GameObject man = ObjectPooler.SharedInstance.pooledObjects[i];
-                if (man != null)
-                {
-                    //Not to make it move in a straight line
-                    if (i % 2 == 0)
-                    {
-                        man.transform.position = new Vector3(-xPos, yPos, zPos);
-                        man.GetComponent<PlayerLogic>().MovePlayer();
-                    }
-                    else
-                    {
-                        man.transform.position = new Vector3(xPos, yPos, zPos);
-                        man.GetComponent<PlayerLogic>().MovePlayer();
-                    }
-                }
-                man.SetActive(true);
-            }
-            k++;
-        }
-        ObjectPooler.SharedInstance.lastVal = poolStart + (int)val;
-    }
-```
-
-![br](https://user-images.githubusercontent.com/85858695/150830170-ff952e0c-23ed-4b9b-8da5-77c48049af65.png)
-
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/85858695/151644561-c3d0726f-0276-4425-8b8f-6b9f93d76372.png" alt="Endless Runner"/>
-  <img src="https://user-images.githubusercontent.com/85858695/151644595-052f1b49-fe7a-4bde-89e0-3d2cdc438d0f.gif" alt="Endless Runner"/>
-</p>
-
-# Code Snippets - Endless Runner
-
-**Move in lanes**
-
-```C#
-//MOVE IN THE LANES
-void MoverX(int wallNo, int direction)
-    {
-        for (int i = 1; i < 5; i++)
-        {
-            if (wallNo != i)
-            {
-                walls[i].isTrigger = false;
-            }
-            else
-            {
-                walls[i].isTrigger = true;
-            }
-        }
-
-        move.x = direction * speed;
-    }
-```
-**Calling function MoverX**
-
-```C#
-void Update()
-    {
-        move.z = Time.deltaTime * speed;
-
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            if (wallNo <= 1)
-            {
-                wallNo = 1;
-                MoverX(wallNo, -1);
-            }
-            else
-            {
-                MoverX(wallNo, -1);
-                wallNo--;
-            }
-           
-        }
-
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            if (wallNo >= 4)
-            {
-                wallNo = 4;
-                MoverX(wallNo, 1);
-            }
-            else
-            {
-                MoverX(wallNo, 1);
-                wallNo++;
-            }
-           
-        }
-
-        Jumping(Input.GetKeyDown(KeyCode.Space));
-
-        Sliding(Input.GetKeyDown(KeyCode.S));
-
-        player.Move(move);
-    }
-```
-**Making it endless**
-```C#
-private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            Instantiate(Base, baseSpawner.position, baseSpawner.rotation);
-            Destroy(GameObject.FindGameObjectWithTag("BASE"), 2f);
-        }
-
-    }
-```
-![br](https://user-images.githubusercontent.com/85858695/150830170-ff952e0c-23ed-4b9b-8da5-77c48049af65.png)
