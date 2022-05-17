@@ -273,10 +273,8 @@ void UpdatePop()
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85858695/151644906-61c8ec3c-3bd4-41d4-ad48-7088137857a2.png" alt="Basic Shooting"/>
-  <img src="https://user-images.githubusercontent.com/85858695/151646387-e133e121-4310-4544-b9de-8a5f6f4ae101.gif" alt="Basic Shooting"/>
+  <img src="https://user-images.githubusercontent.com/85858695/168738784-03c62e85-402b-4816-a7e5-3bfd1fb42934.gif" alt="Basic Shooting"/>
 </p>
-
-
 
 # Code Snippets - Basic Shooting
 
