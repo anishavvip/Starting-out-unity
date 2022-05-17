@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85858695/151645394-6fc12fd5-def0-4bd5-9a26-7b5b36948960.png" alt="Prototypes"/>
   <img src="https://user-images.githubusercontent.com/85858695/151645105-65112d72-5876-4b37-941f-6dbf9bcfe1b6.png" alt="Cut The Rope"/>
-  <img src="https://user-images.githubusercontent.com/85858695/168737228-1a879d28-7ac7-4c7d-8233-43595216a416.gif" alt="Cut The Rope"/>
+  <img src="https://user-images.githubusercontent.com/85858695/168740637-66e8319f-2fc0-4de0-85db-667d0e2cbaab.gif" alt="Cut The Rope"/>
 </p>
 
 # Code Snippets - Cut The Rope
@@ -274,7 +274,7 @@ void UpdatePop()
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85858695/151644906-61c8ec3c-3bd4-41d4-ad48-7088137857a2.png" alt="Basic Shooting"/>
-  <img src="https://user-images.githubusercontent.com/85858695/168738784-03c62e85-402b-4816-a7e5-3bfd1fb42934.gif" alt="Basic Shooting"/>
+  <img src="https://user-images.githubusercontent.com/85858695/168740513-8f2231e9-3679-476d-9ed3-1e95395f168d.gif" alt="Basic Shooting"/>
 </p>
 
 # Code Snippets - Basic Shooting
