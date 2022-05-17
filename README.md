@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85858695/151645394-6fc12fd5-def0-4bd5-9a26-7b5b36948960.png" alt="Prototypes"/>
   <img src="https://user-images.githubusercontent.com/85858695/151645105-65112d72-5876-4b37-941f-6dbf9bcfe1b6.png" alt="Cut The Rope"/>
-  <img src="https://user-images.githubusercontent.com/85858695/151645416-0c159b75-cf14-488e-b17a-1c3bfff64b2f.gif" alt="Cut The Rope"/>
+  <img src="https://user-images.githubusercontent.com/85858695/168737228-1a879d28-7ac7-4c7d-8233-43595216a416.gif" alt="Cut The Rope"/>
 </p>
 
 # Code Snippets - Cut The Rope
@@ -47,7 +47,7 @@ void Weight(Rigidbody2D endRB)
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85858695/151644561-c3d0726f-0276-4425-8b8f-6b9f93d76372.png" alt="Endless Runner"/>
-  <img src="https://user-images.githubusercontent.com/85858695/151644595-052f1b49-fe7a-4bde-89e0-3d2cdc438d0f.gif" alt="Endless Runner"/>
+  <img src="https://user-images.githubusercontent.com/85858695/168738280-e78bebc1-c528-48e3-9f21-7dae0091e716.gif" alt="Endless Runner"/>
 </p>
 
 # Code Snippets - Endless Runner
@@ -275,6 +275,7 @@ void UpdatePop()
   <img src="https://user-images.githubusercontent.com/85858695/151644906-61c8ec3c-3bd4-41d4-ad48-7088137857a2.png" alt="Basic Shooting"/>
   <img src="https://user-images.githubusercontent.com/85858695/151646387-e133e121-4310-4544-b9de-8a5f6f4ae101.gif" alt="Basic Shooting"/>
 </p>
+
 
 
 # Code Snippets - Basic Shooting
