@@ -47,9 +47,8 @@ void Weight(Rigidbody2D endRB)
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85858695/151644561-c3d0726f-0276-4425-8b8f-6b9f93d76372.png" alt="Endless Runner"/>
-  <img src="https://user-images.githubusercontent.com/85858695/168739346-c4de1831-83e2-4dba-8984-71cf92c54a70.gif" alt="Endless Runner"/>
+  <img src="https://user-images.githubusercontent.com/85858695/168739937-0c0346d5-ffc2-4673-a98e-281c01496cd3.gif" alt="Endless Runner"/>
 </p>
-
 
 
 # Code Snippets - Endless Runner
