@@ -186,7 +186,7 @@ private void OnTriggerStay2D(Collider2D collision)
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85858695/151644728-f2ae40ad-5be6-434a-9dc0-cdea87b483be.png" alt="Escalator"/>
-  <img src="https://user-images.githubusercontent.com/85858695/151644792-0d0a8b6f-b7e4-45dd-bf0c-64a4f0c6134c.gif" alt="Escalator"/>
+  <img src="https://user-images.githubusercontent.com/85858695/168736149-2a987437-ee5b-47a6-adbc-89fec375c7cf.gif" alt="Escalator"/>
 </p>
 
 # Code Snippets - Escalator
@@ -230,7 +230,7 @@ void PlayerEnteredTheMathWall()
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85858695/151645173-e34e9eff-681c-4f52-9093-7216f38ab065.png" alt="aa"/>
-  <img src="https://user-images.githubusercontent.com/85858695/151645256-a16b9d4c-8db4-4f95-9660-6110743c782a.gif" alt="aa"/>
+  <img src="https://user-images.githubusercontent.com/85858695/168736257-f8601876-74d9-4f37-966e-7e5c659c1b96.gif" alt="aa"/>
 </p>
 
 
