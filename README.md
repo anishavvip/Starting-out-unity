@@ -134,9 +134,8 @@ private void OnTriggerEnter(Collider other)
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/85858695/151644524-acefbc9a-90fe-4d78-a091-95e6d82dba44.png" alt="Color Switch"/>
-  <img src="https://user-images.githubusercontent.com/85858695/151644250-518c9726-d6dc-4ca4-bacc-f6e4b84f7b1b.gif" alt="Color Switch"/>
+  <img src="https://user-images.githubusercontent.com/85858695/168735185-796ef920-ae16-4b45-8269-169ce4f2aba0.gif" alt="Color Switch"/>
 </p>
-
 
 
 # Code Snippets - Color Switch
